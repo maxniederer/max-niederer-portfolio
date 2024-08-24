@@ -1,0 +1,104 @@
+$color-primary: #ff5e00;
+$color-glow: #ff7d6090;
+$color-body: #FFEBE0;
+$color-background: #5636B0;
+
+html[data-theme="light"] {
+  --color-body: #{$color-background};
+  --color-background: #{$color-body};
+  --color-primary: #{$color-primary};
+  --color-accent: #{$color-primary};
+  --bg-image: url(../img/pattern.png);
+}
+
+html[data-theme="dark"] {
+  --color-body: #{$color-body};
+  --color-background: #{$color-background};
+  --color-primary: #{$color-primary};
+  --color-accent: #{$color-body};
+  --bg-image: url(../img/patterndark.png);
+}
+
+/* fonts */
+$font-title: "Anybody", sans-serif;
+$font-text: "Nunito", sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+$link-glow: drop-shadow(0px 0px 7px $color-glow);
+$link-glow-hover: drop-shadow(0px 0px 4px $color-primary);
+
+@mixin transition-style() {
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+@mixin link-hover-glow() {
+  transition: filter .2s ease-in-out;
+  &:hover {
+    @include link-glow();
+  }
+}
+
+@mixin link-glow() {
+  filter: $link-glow;
+}
+
+@mixin link-decoration($i) {
+  text-decoration: underline $i dotted $color-primary;
+  font-weight: bold;
+  @include link-decoration-hover()
+}
+
+@mixin link-decoration-hover() {
+  &:hover {
+    @include link-decoration-wavy();
+  }
+}
+
+@mixin link-decoration-wavy() {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--color-primary);
+}
+
+@mixin star($size) {
+  content: "";
+
+  width: $size;
+  aspect-ratio: 1/1;
+  z-index: -1;
+
+  // border: 1px rgba(255, 0, 0, 1) dashed;
+  background-image: url('../img/star.svg');
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin star-psuedo($top, $left, $size) {
+  @include star(clamp(3rem, 10vw, 5.5rem));
+  position: absolute;
+  bottom: $top;
+  right: $left;
+  background-size: $size;
+  
+  @include spin-animation();
+}
+
+@mixin spin-animation() {
+  @media(prefers-reduced-motion: no-preference) {
+    animation-name: spin;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  } 
+}
+
+@mixin animation-delay($i) {
+  animation-delay: calc(-1 * $i);
+}

@@ -405,7 +405,7 @@ button {
   transition: filter 0.2s;
 }
 .hero-row img:hover {
-  filter: drop-shadow(0px 0px 6px rgba(255, 125, 96, 0.5647058824));
+  filter: brightness(1.2);
 }
 
 h1 {

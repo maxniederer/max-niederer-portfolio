@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "github:11ty/eleventy"
+    "@11ty/eleventy": "github:11ty/eleventy",
+    "netlify-cli": "^17.34.2"
   }
 }

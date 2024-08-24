@@ -4,7 +4,7 @@ layout: layouts/blog.html
 
 ## <span>H</span>ey, I'm Max
 
-I do many things! Right now, I'm designing and developing websites. I love structuing information and playing with CSS until every webpage is responsive in just the right way. My specialty right now lies with front-end development for static webpages, but I'm aiming to expand my horizons to include dynamic CMS pages and full-stack engineering.
+I do many things! Right now, I'm designing and developing websites. I love structuring information and playing with CSS until every webpage is responsive in just the right way. My specialty right now lies with front-end development for static webpages, but I'm aiming to expand my horizons to include dynamic CMS pages and full-stack engineering.
 
 In my free time, I'm a fantasy artist who loves worldbuilding; I'm a game developer that makes short indie projects; and I'm a huge fan of *Dungeon Meshi*. Ask me about my favorite films, games, or anime!
 

@@ -4,7 +4,7 @@ layout: layouts/blog.html
 
 ## <span>P</span>ortfolio Website
 
-My portfolio site for my web development ventures. This is still a work in progress as I develop new projects!
+A portfolio site for my web development ventures. This is still a work in progress as I develop new projects!
 
 I was inspired to make my own website after wanting more customization from free HTML templates and becoming insurmountably annoyed with bloated Squarespace pages. Every single Squarespace page I've ever loaded up nearly bricks my Firefox when changing the viewport size! It's ridiculous! And thus, through spite, my new career venture was born.
 

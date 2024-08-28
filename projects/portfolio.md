@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog.html
+layout: layouts/blog.njk
 ---
 
 ## <span>P</span>ortfolio Website
@@ -10,9 +10,9 @@ I was inspired to make my own website after wanting more customization from free
 
 ### Tech Stack
 
-+ **11ty**: for generating the static website
-+ **Bootstrap**: for responsiveness
-    + I ended up opting for flex boxes and grids instead of Bootstrap's columns, so this site doesn't use Bootstrap too much, lol
-+ **SASS**: for styling
-+ **Netlify**: for deployment
-+ **Github**: for version control & Netlify setup
+- **11ty**: for generating the static website
+- **Bootstrap**: for responsiveness
+  - I ended up opting for flex boxes and grids instead of Bootstrap's columns, so this site doesn't use Bootstrap too much, lol
+- **SASS**: for styling
+- **Netlify**: for deployment
+- **Github**: for version control & Netlify setup

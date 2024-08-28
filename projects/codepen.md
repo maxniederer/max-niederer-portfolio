@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog.html
+layout: layouts/blog.njk
 ---
 
 ## <span>C</span>odePen
@@ -10,6 +10,6 @@ I have a few CodePen projects that I'm interested in developing further (i.e. th
 
 ### Tech Stack
 
-+ **HTML**
-+ **SCSS**
-+ **JS**
+- **HTML**
+- **SCSS**
+- **JS**

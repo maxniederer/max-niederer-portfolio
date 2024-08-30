@@ -6,7 +6,13 @@ layout: layouts/blog.njk
 
 <a class="btn" href="https://codepen.io/raiden000/pens/public/" target="_blank" rel="noopener noreferrer">View My CodePen</a>
 
-I have a few CodePen projects that I'm interested in developing further (i.e. the Bionic Reading and YouTube Thumbnail Previewer pens), but I haven't had the time to see it through yet. As for now, here are a few miscellaneous front-end projects you can browse.
+On my CodePen you can find:
+
+1. **YouTube Thumbnail Previewer**: A tool to preview thumbnail and title combinations for YouTube videos
+
+2. **Bionic Reading (WIP)**: A script that takes all \<p\> elements on a page and dynamically adjusts the boldness of each word to facilitate faster reading. Not 100% complete!
+
+There are some other miscellaneous front-end practice pens you can browse as well :\)
 
 ### Tech Stack
 

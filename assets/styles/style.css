@@ -418,10 +418,6 @@ nav button {
   background-image: url("../img/mii_hover.png");
   background-size: cover;
   opacity: 0;
-  animation-name: bob;
-  animation-duration: 2s;
-  animation-timing-function: steps(2, end);
-  animation-iteration-count: infinite;
 }
 .hero-row .hero-img-holder:hover::after {
   opacity: 100%;

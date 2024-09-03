@@ -281,10 +281,10 @@ nav button {
       background-size: cover;
       opacity: 0;
 
-      animation-name: bob;
-      animation-duration: 2s;
-      animation-timing-function: steps(2, end);
-      animation-iteration-count: infinite;
+      // animation-name: bob;
+      // animation-duration: 2s;
+      // animation-timing-function: steps(2, end);
+      // animation-iteration-count: infinite;
     }
     &:hover::after {
       opacity: 100%;

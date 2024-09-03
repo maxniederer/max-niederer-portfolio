@@ -23,4 +23,28 @@ layout: layouts/base.njk
     <h2><span id="star-4">C</span>ontac<span id="star-6">t</span></h2>
   </div>
   <p>Employers, I'm currently looking for work! You can reach me through email at <a href="mailto:maxniederergvc@gmail.com">maxniederergvc@gmail.com</a>.</p>
+  
+  <form name="contact" netlify>
+    <div>
+      <label>
+        <i class="fa-solid fa-user"></i>
+        <input type="text" name="name" placeholder="Name" />
+      </label>
+    </div>
+    <div>
+      <label>
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" name="email" placeholder="Email" />
+      </label>
+    </div>
+    <div>
+      <label>
+        <i class="fa-solid fa-message"></i>
+        <textarea type="message" name="message" placeholder="Message..."></textarea>
+      </label>
+    </div>
+    <div>
+      <button type="submit" class="btn">Send Message</button>
+    </div>
+  </form>
 </section>

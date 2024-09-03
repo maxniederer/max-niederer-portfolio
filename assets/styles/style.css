@@ -418,6 +418,10 @@ nav button {
   background-image: url("../img/mii_hover.png");
   background-size: cover;
   opacity: 0;
+  animation-name: bob;
+  animation-duration: 3s;
+  animation-timing-function: steps(2, end);
+  animation-iteration-count: infinite;
 }
 .hero-row .hero-img-holder:hover::after {
   opacity: 100%;
@@ -796,9 +800,9 @@ footer > nav > a:hover {
 }
 @keyframes bob {
   0% {
-    transform: rotate(0deg) scale(1);
+    background-image: url("../img/mii_hover.png");
   }
   100% {
-    transform: rotate(-10deg) scale(0.95);
+    background-image: url("../img/mii_hover2.png");
   }
 }/*# sourceMappingURL=style.css.map */

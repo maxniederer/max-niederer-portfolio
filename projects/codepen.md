@@ -1,5 +1,8 @@
 ---
-layout: layouts/blog.njk
+title: CodePen
+desc: Samples of smaller projects using vanilla CSS/JS.
+image: /assets/img/P3.png
+imageAlt: A mockup Youtube thumbnail
 ---
 
 ## <span>C</span>odePen

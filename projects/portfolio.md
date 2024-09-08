@@ -1,5 +1,8 @@
 ---
-layout: layouts/blog.njk
+title: Portfolio Website
+desc: More detail about this website and its tech stack.
+image: /assets/img/P1.png
+imageAlt: a white and purple graphic with orange stars and the initiails MN
 ---
 
 ## <span>P</span>ortfolio Website

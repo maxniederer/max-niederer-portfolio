@@ -1,0 +1,23 @@
+<section id="projects">
+  <div class="projects-heading">
+    <h2><span id="star-4">P</span>rojec<span id="star-5">t</span>s</h2>
+  </div>
+  <div class="project-row">
+
+    {%- for project in collections.project | reverse -%}
+      <a class="project-entry float-up" href="{{project.url}}">
+        <div class="project-body">
+          <img src="{{project.data.image}}" alt="{{project.data.imageAlt}}"/>
+        </div>
+        <div class="project-content">
+          <h3>{{project.data.title}}</h3>
+          <p class="project-desc">
+            {{project.data.desc}}
+          </p>
+        </div>
+        <p class="read-more">Read more</p>
+      </a>
+    {%- endfor -%}
+
+  </div>
+</section>

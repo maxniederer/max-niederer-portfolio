@@ -1,5 +1,8 @@
 ---
-layout: layouts/blog.njk
+title: Bookdoku (WIP)
+desc: A "Sunday paper" web-game utilizing the OpenLibrary API, currently in development.
+image: /assets/img/P2.png
+imageAlt: The title Bookdoku with an emoji of books on a green background
 ---
 
 ## <span>B</span>ookdoku (WIP)

@@ -1,3 +1,57 @@
+/* suse-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "SUSE";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/suse-v1-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* suse-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "SUSE";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/suse-v1-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* anybody-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/anybody-v11-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* anybody-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Anybody";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/anybody-v11-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* anybody-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/anybody-v11-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* anybody-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Anybody";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/anybody-v11-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 $color-primary: #ff5e00;
 $color-glow: #ff7d6090;
 $color-body: #ffebe0;
@@ -21,12 +75,7 @@ html[data-theme="dark"] {
 
 /* fonts */
 $font-title: "Anybody", sans-serif;
-$font-text: "Nunito", sans-serif;
-
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet');
-@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+$font-text: "SUSE", sans-serif;
 
 $link-glow: drop-shadow(0px 0px 7px $color-glow);
 $link-glow-hover: drop-shadow(0px 0px 4px $color-primary);
@@ -49,7 +98,7 @@ $link-glow-hover: drop-shadow(0px 0px 4px $color-primary);
 
 @mixin link-decoration($i) {
   text-decoration: underline $i dotted $color-primary;
-  font-weight: bold;
+  font-weight: 600;
   @include link-decoration-hover();
 }
 

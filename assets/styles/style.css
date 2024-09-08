@@ -1,8 +1,52 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet');
-@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* suse-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "SUSE";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/suse-v1-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* suse-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "SUSE";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/suse-v1-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* anybody-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/anybody-v11-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* anybody-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Anybody";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/anybody-v11-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* anybody-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/anybody-v11-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* anybody-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Anybody";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/anybody-v11-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 html[data-theme=light] {
   --color-body: #5636b0;
   --color-background: #ffebe0;
@@ -50,10 +94,8 @@ body {
   padding-inline: clamp(16px, 3vw, 32px);
   max-width: 100rem;
   margin-inline: auto;
-  font-family: "Nunito", sans-serif;
+  font-family: "SUSE", sans-serif;
   font-size: 1.2rem;
-  background-image: var(--bg-image);
-  background-repeat: repeat;
 }
 body .site-holder {
   flex-grow: 1;
@@ -62,13 +104,17 @@ body .site-holder {
 p a {
   -webkit-text-decoration: underline 3px dotted #ff5e00;
           text-decoration: underline 3px dotted #ff5e00;
-  font-weight: bold;
+  font-weight: 600;
 }
 p a:hover {
   text-decoration-line: underline;
   text-decoration-style: wavy;
   text-decoration-thickness: 1px;
   text-decoration-color: var(--color-primary);
+}
+
+strong {
+  font-weight: 600;
 }
 
 a {
@@ -84,7 +130,7 @@ a {
   outline: 1px solid var(--color-body);
   box-shadow: 0 4px 0 0 var(--color-primary);
   transition: color 0.2s;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 .btn:hover {
@@ -345,13 +391,18 @@ header {
 header nav {
   margin-top: 6px;
   display: flex;
-  gap: 1.7rem;
+  gap: 1rem;
+}
+@media (min-width: 50rem) {
+  header nav {
+    gap: 1.7rem;
+  }
 }
 
 header nav > *,
 dialog > * {
   color: var(--color-accent);
-  font-weight: 700;
+  font-weight: 600;
   transition: filter 0.2s ease-in-out;
 }
 header nav > *:hover,
@@ -441,9 +492,7 @@ nav button {
 .hero-row .hero-img-holder:hover::after {
   opacity: 100%;
 }
-.hero-row img {
-  transition: filter 0.2s;
-}
+
 h1 {
   font-size: clamp(2rem, 10vw, 4rem);
   line-height: normal;
@@ -503,9 +552,6 @@ h1 {
 .blurb img {
   width: 100%;
   max-width: 400px;
-}
-.blurb i {
-  font-weight: 600;
 }
 
 /* PROJECTS */
@@ -582,10 +628,9 @@ h1 {
 .read-more {
   text-align: right;
   margin-block: 0;
-  font-weight: 700;
   -webkit-text-decoration: underline 2px dotted #ff5e00;
           text-decoration: underline 2px dotted #ff5e00;
-  font-weight: bold;
+  font-weight: 600;
   transition-property: filter;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -810,7 +855,7 @@ footer > nav > a:hover {
     text-shadow: 0px 1px 0px var(--color-primary), 0px 0px 28px rgba(255, 125, 96, 0.5647058824);
   }
   to {
-    text-shadow: 0px clamp(1px, 1vw, 6px) 0px var(--color-primary), 0px 0px 28px rgba(255, 125, 96, 0.5647058824);
+    text-shadow: 0px 0.1em 0px var(--color-primary), 0px 0px 28px rgba(255, 125, 96, 0.5647058824);
   }
 }
 @keyframes bob {

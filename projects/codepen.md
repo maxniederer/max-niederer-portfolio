@@ -3,11 +3,9 @@ title: CodePen
 desc: Samples of smaller projects using vanilla CSS/JS.
 image: /assets/img/P3.png
 imageAlt: A mockup Youtube thumbnail
+linkTitle: View My CodePen
+link: https://codepen.io/raiden000/pens/public/
 ---
-
-## <span>C</span>odePen
-
-<a class="btn" href="https://codepen.io/raiden000/pens/public/" target="_blank" rel="noopener noreferrer">View My CodePen</a>
 
 On my CodePen you can find:
 

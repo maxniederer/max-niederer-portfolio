@@ -3,11 +3,9 @@ title: Bookdoku (WIP)
 desc: A "Sunday paper" web-game utilizing the OpenLibrary API, currently in development.
 image: /assets/img/P2.png
 imageAlt: The title Bookdoku with an emoji of books on a green background
+linkTitle: View Live Demo
+link: https://bookdoku-app-24892.netlify.app/
 ---
-
-## <span>B</span>ookdoku (WIP)
-
-<a class="btn" href="https://bookdoku-app-24892.netlify.app/" target="_blank" rel="noopener noreferrer">View Live Demo</a>
 
 Bookdoku is a work-in-progress "Sunday paper" web game in a similar to Moviegrid and Cinematrix. For each grid cell, the player must select a book that satisfies the clues of its row and column (e.g. a cell with clues "by George R. R. Martin" and "Fantasy" can be satisfied with _A Game of Thrones_, _A Storm of Swords_, etc).
 

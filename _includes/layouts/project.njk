@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="site-holder-blog">
+
+  <h2>
+    <span></span>
+    {{ title }}
+  </h2>
+
+  {% if link %}
+    <a class="btn" href="{{ link }}" target="_blank" rel="noopener noreferrer">
+      {{ linkTitle }}
+    </a>
+  {% endif %}
+
+  {{ content | safe }}
+</div>

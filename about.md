@@ -1,8 +1,7 @@
 ---
-layout: layouts/blog.njk
+layout: layouts/project.njk
+title: Hey, I'm Max
 ---
-
-## <span>H</span>ey, I'm Max
 
 I do many things! Right now, I'm designing and developing websites. I love structuring information and playing with CSS until every webpage is responsive in just the right way. My specialty right now lies with front-end development for static webpages, but I'm aiming to expand my horizons to include dynamic CMS pages and full-stack engineering.
 

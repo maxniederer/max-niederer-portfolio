@@ -47,7 +47,7 @@ body {
   flex-direction: column;
   background-color: var(--color-background);
   color: var(--color-body);
-  padding-inline: 3%;
+  padding-inline: clamp(16px, 3vw, 32px);
   max-width: 100rem;
   margin-inline: auto;
   font-family: "Nunito", sans-serif;
@@ -79,7 +79,8 @@ a {
 .btn {
   position: relative;
   top: 0;
-  color: var(--color-body);
+  color: var(--color-background);
+  background: var(--color-body);
   outline: 1px solid var(--color-body);
   box-shadow: 0 4px 0 0 var(--color-primary);
   transition: color 0.2s;
@@ -90,8 +91,8 @@ a {
   top: 2px;
   box-shadow: 0 2px 0 0 var(--color-primary);
   text-decoration: none;
-  color: var(--color-background);
-  background: var(--color-body);
+  color: var(--color-body);
+  background: none;
 }
 
 section#hero {
@@ -125,16 +126,18 @@ section#contact {
 }
 .site-holder-blog h2 > span::before {
   content: "";
-  width: clamp(3rem, 10vw, 5.5rem);
+  width: 1.6em;
   aspect-ratio: 1/1;
   z-index: -1;
+  transform: translate(-50%, -50%);
   background-image: url("../img/star.svg");
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
   position: absolute;
-  bottom: -1rem;
-  right: -0.4rem;
+  top: -18px;
+  left: -44px;
   background-size: 85%;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -175,16 +178,18 @@ span {
 
 #star-1::before {
   content: "";
-  width: clamp(3rem, 10vw, 5.5rem);
+  width: 1.6em;
   aspect-ratio: 1/1;
   z-index: -1;
+  transform: translate(-50%, -50%);
   background-image: url("../img/star.svg");
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
   position: absolute;
-  bottom: 0rem;
-  right: -2rem;
+  top: 0rem;
+  left: -2rem;
   background-size: 87%;
   animation-delay: -2s;
 }
@@ -199,16 +204,18 @@ span {
 
 #star-2::before {
   content: "";
-  width: clamp(3rem, 10vw, 5.5rem);
+  width: 1.6em;
   aspect-ratio: 1/1;
   z-index: -1;
+  transform: translate(-50%, -50%);
   background-image: url("../img/star.svg");
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
   position: absolute;
-  bottom: -1rem;
-  right: -1rem;
+  top: -1rem;
+  left: -1rem;
   background-size: 50%;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -222,16 +229,18 @@ span {
 
 #star-3::before {
   content: "";
-  width: clamp(3rem, 10vw, 5.5rem);
+  width: 1.6em;
   aspect-ratio: 1/1;
   z-index: -1;
+  transform: translate(-50%, -50%);
   background-image: url("../img/star.svg");
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
   position: absolute;
-  bottom: 0rem;
-  right: -0.1rem;
+  top: 0rem;
+  left: -0.1rem;
   background-size: 60%;
   animation-delay: -1s;
 }
@@ -246,16 +255,18 @@ span {
 
 #star-4::before {
   content: "";
-  width: clamp(3rem, 10vw, 5.5rem);
+  width: 1.6em;
   aspect-ratio: 1/1;
   z-index: -1;
+  transform: translate(-50%, -50%);
   background-image: url("../img/star.svg");
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
   position: absolute;
-  bottom: -0.9rem;
-  right: -2rem;
+  top: -0.9rem;
+  left: -2rem;
   background-size: 70%;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -269,16 +280,18 @@ span {
 
 #star-5::before {
   content: "";
-  width: clamp(3rem, 10vw, 5.5rem);
+  width: 1.6em;
   aspect-ratio: 1/1;
   z-index: -1;
+  transform: translate(-50%, -50%);
   background-image: url("../img/star.svg");
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
   position: absolute;
-  bottom: -0.1rem;
-  right: -2rem;
+  top: -0.1rem;
+  left: -2rem;
   background-size: 50%;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -292,16 +305,18 @@ span {
 
 #star-6::before {
   content: "";
-  width: clamp(3rem, 10vw, 5.5rem);
+  width: 1.6em;
   aspect-ratio: 1/1;
   z-index: -1;
+  transform: translate(-50%, -50%);
   background-image: url("../img/star.svg");
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
   position: absolute;
-  bottom: -0.1rem;
-  right: -1rem;
+  top: -0.1rem;
+  left: -1rem;
   background-size: 50%;
 }
 @media (prefers-reduced-motion: no-preference) {

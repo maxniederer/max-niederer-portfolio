@@ -23,7 +23,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-body);
 
-  padding-inline: 3%;
+  padding-inline: clamp(16px, 3vw, 32px);
   max-width: 100rem;
   margin-inline: auto;
 
@@ -63,7 +63,8 @@ ul {
 .btn {
   position: relative;
   top: 0;
-  color: var(--color-body);
+  color: var(--color-background);
+  background: var(--color-body);
   outline: 1px solid var(--color-body);
   box-shadow: 0 4px 0 0 var(--color-primary);
   transition: color 0.2s;
@@ -72,8 +73,8 @@ ul {
     top: 2px;
     box-shadow: 0 2px 0 0 var(--color-primary);
     text-decoration: none;
-    color: var(--color-background);
-    background: var(--color-body);
+    color: var(--color-body);
+    background: none;
   }
   margin-bottom: 1rem;
 }
@@ -111,7 +112,7 @@ section#contact {
   }
 
   h2 > span::before {
-    @include star-psuedo(-1rem, -0.4rem, 85%);
+    @include star-psuedo(-18px, -44px, 85%);
   }
 
   h3 {
@@ -510,11 +511,6 @@ label i {
   width: 1.5rem;
   text-align: center;
   margin-top: 0.4rem;
-}
-
-form .btn {
-  // width: 100%;
-  // aspect-ratio: none;
 }
 
 ////////////

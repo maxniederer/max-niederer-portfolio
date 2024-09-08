@@ -73,18 +73,22 @@ $link-glow-hover: drop-shadow(0px 0px 4px $color-primary);
   aspect-ratio: 1/1;
   z-index: -1;
 
+  transform: translate(-50%, -50%);
+
   // border: 1px rgba(255, 0, 0, 1) dashed;
   background-image: url("../img/star.svg");
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: center;
+
+  display: none;
 }
 
 @mixin star-psuedo($top, $left, $size) {
-  @include star(clamp(3rem, 10vw, 5.5rem));
+  @include star(1.6em);
   position: absolute;
-  bottom: $top;
-  right: $left;
+  top: $top;
+  left: $left;
   background-size: $size;
 
   @include spin-animation();

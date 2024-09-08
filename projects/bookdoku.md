@@ -11,7 +11,7 @@ Bookdoku is a work-in-progress "Sunday paper" web game in a similar to Moviegrid
 
 Currently, the player can search for a book using the title and the author's name. This is the only functionality implemented so far.
 
-This project uses the [OpenLibrary API](https://openlibrary.org/developers/api).
+This project uses the [OpenLibrary API](https://openlibrary.org/developers/api). Considering recent events with the [_Hachette v. Internet Archive_](https://en.wikipedia.org/wiki/Hachette_v._Internet_Archive) case, 500,000 books were removed from the OpenLibrary lending collection. While this does not seem to be affecting the API, I am unsure if the API will remain stable or if publishers will seek to remove more resources from OpenLibrary. This project is currently on pause as I look for alternative APIs.
 
 ### Tech Stack
 

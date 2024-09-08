@@ -3,12 +3,10 @@ layout: layouts/project.njk
 title: Hey, I'm Max
 ---
 
-I do many things! Right now, I'm designing and developing websites. I love structuring information and playing with CSS until every webpage is responsive in just the right way. My specialty right now lies with front-end development for static webpages, but I'm aiming to expand my horizons to include dynamic CMS pages and full-stack engineering.
+I'm a developer, illustrator, and multidisciplinary designer who's creating websites to bridge the gap between my technical background and my artistic skillset. I love structuring information, pairing fonts and colors on webpages, and twiddling with CSS for hours.
 
 In my free time, I'm a fantasy artist who loves worldbuilding; I'm a game developer that makes short indie projects; and I'm a huge fan of _Dungeon Meshi_. Ask me about my favorite films, games, or anime!
 
-**I am looking for full-time positions in web development, front-end or full-stack. I am willing to relocate!**
+I am looking for work. If you're an employer, or if you want me to make you a landing page, or if you just want to chat, feel free to reach out to me for any reason at [maxniederergvc@gmail.com](mailto:maxniederergvc@gmail.com). (Except for spam, I guess. Please don't send me junkmail.)
 
-Want to hire me? Want me to make you a landing page? Wanna talk about games? Feel free to reach out to me for any reason at [maxniederergvc@gmail.com](mailto:maxniederergvc@gmail.com). (Except for spam, I guess. Please don't send me junkmail.)
-
-<img src="/assets/img/selfport.png">
+![A digital self-portrait of a blonde man with long hair, a beard, and glasses](/assets/img/selfport.png)

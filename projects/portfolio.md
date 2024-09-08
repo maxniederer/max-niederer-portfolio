@@ -6,9 +6,9 @@ image: /assets/img/P1.png
 imageAlt: a white and purple graphic with orange stars and the initiails MN
 ---
 
-A portfolio site for my web development ventures. This is still a work in progress as I develop new projects!
+A portfolio site for my web development ventures.
 
-I was inspired to make my own website after wanting more customization from free HTML templates and becoming insurmountably annoyed with bloated Squarespace pages. Every single Squarespace page I've ever loaded up nearly bricks my Firefox when changing the viewport size! It's ridiculous! And thus, through spite, my new career venture was born.
+I was inspired to start making websites after wanting more customization from free HTML templates and becoming insurmountably annoyed with bloated Squarespace pages. Every single Squarespace page I've ever loaded up nearly crashes my Firefox when changing the viewport size, it's ridiculous.
 
 ### Tech Stack
 

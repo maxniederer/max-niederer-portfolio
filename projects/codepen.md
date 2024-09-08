@@ -11,9 +11,9 @@ On my CodePen you can find:
 
 1. [YouTube Thumbnail Previewer](https://codepen.io/raiden000/pen/gONGdOM): A tool to preview thumbnail and title combinations for YouTube videos
 
-2. [Bionic Reading (WIP)](https://codepen.io/raiden000/pen/gONGBoB): A script that takes all \<p\> elements on a page and dynamically adjusts the boldness of each word to facilitate faster reading. Not 100% complete!
+2. [Bionic Reading (WIP)](https://codepen.io/raiden000/pen/gONGBoB): A script that takes all \<p\> elements on a page and dynamically adjusts the boldness of each word to facilitate faster reading. Work in progress.
 
-There are some other miscellaneous front-end practice pens you can browse as well :\)
+There are some other miscellaneous front-end practice pens on my account that you can browse as well :\)
 
 ### Tech Stack
 

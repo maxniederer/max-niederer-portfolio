@@ -130,7 +130,7 @@ $link-glow-hover: drop-shadow(0px 0px 4px $color-primary);
   background-repeat: no-repeat;
   background-position: center;
 
-  display: none;
+  // display: none;
 }
 
 @mixin star-psuedo($top, $left, $size) {

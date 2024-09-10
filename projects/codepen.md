@@ -5,6 +5,7 @@ image: /assets/img/P3.png
 imageAlt: A mockup Youtube thumbnail
 linkTitle: View My CodePen
 link: https://codepen.io/raiden000/pens/public/
+order: 3
 ---
 
 On my CodePen you can find:

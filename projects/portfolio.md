@@ -4,6 +4,7 @@ tags: featured
 desc: More detail about this website and its tech stack.
 image: /assets/img/P1.png
 imageAlt: a white and purple graphic with orange stars and the initiails MN
+order: 2
 ---
 
 A portfolio site for my web development ventures.

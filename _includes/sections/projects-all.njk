@@ -6,7 +6,7 @@
   </div>
   <div class="project-row">
 
-    {%- for project in collections.project | reverse -%}
+    {%- for project in collections.project | sortByOrder -%}
       <a class="project-entry float-up" href="{{project.url}}">
         <div class="project-body">
           <img src="{{project.data.image}}" alt="{{project.data.imageAlt}}"/>

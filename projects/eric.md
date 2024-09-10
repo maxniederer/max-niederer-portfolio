@@ -6,6 +6,7 @@ image: /assets/img/P2.png
 imageAlt: a screencap of Eric's website with a green background and purple text
 linkTitle: View Website
 link: https://eric-trimbur-portfolio.netlify.app/
+order: 1
 ---
 
 Eric is a computer engineer & software developer who wanted a refresh to his portfolio website. He disliked paying a subscription to Squarespace and wanted a more streamlined workflow to updating his site. He also dicussed potentially hosting a blog in the future.

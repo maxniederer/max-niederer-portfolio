@@ -173,6 +173,23 @@ span {
   z-index: 2;
 }
 
+.heading-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heading-line {
+  border-top: 1px solid var(--color-accent);
+  flex-grow: 1;
+  flex-shrink: 1;
+  @media (min-width: 50rem) {
+    &:nth-of-type(2n-1) {
+      display: none;
+    }
+  }
+}
+
 ////////////
 /* HEADER */
 ////////////
@@ -335,10 +352,7 @@ $n: 11;
 /* PROJECTS */
 //////////////
 
-.projects-heading {
-  display: flex;
-  align-items: center;
-
+.project-heading {
   margin-bottom: 1rem;
 }
 
@@ -456,10 +470,6 @@ $n: 11;
 
 #contact a {
   @include link-hover-glow();
-}
-
-.contact-heading {
-  display: flex;
 }
 
 input,

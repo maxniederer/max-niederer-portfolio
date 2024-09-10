@@ -370,6 +370,23 @@ span {
   }
 }
 
+.heading-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heading-line {
+  border-top: 1px solid var(--color-accent);
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+@media (min-width: 50rem) {
+  .heading-line:nth-of-type(2n-1) {
+    display: none;
+  }
+}
+
 /* HEADER */
 header {
   margin-top: clamp(1rem, 2.5vw, 2rem);
@@ -551,9 +568,7 @@ h1 {
 }
 
 /* PROJECTS */
-.projects-heading {
-  display: flex;
-  align-items: center;
+.project-heading {
   margin-bottom: 1rem;
 }
 
@@ -679,10 +694,6 @@ h1 {
 }
 #contact a:hover {
   filter: drop-shadow(0px 0px 7px rgba(255, 125, 96, 0.5647058824));
-}
-
-.contact-heading {
-  display: flex;
 }
 
 input,

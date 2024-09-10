@@ -102,7 +102,7 @@ section#contact {
   }
 
   h2 > span::before {
-    @include star-psuedo(-18px, -44px, 85%);
+    @include star-psuedo(-0.3em, -0.8em, 85%);
   }
 
   h3 {
@@ -140,29 +140,37 @@ span {
 }
 
 #star-1::before {
-  @include star-psuedo(0rem, -2rem, 87%);
-  @include animation-delay(2s);
+  // @include star-psuedo(-0.3em, -0.7em, 87%);
+  // @include animation-delay(2s);
 }
 
 #star-2::before {
-  @include star-psuedo(-1rem, -1rem, 50%);
+  @include star-psuedo(-0.04em, -0.82em, 35%);
+  z-index: 2;
 }
 
 #star-3::before {
-  @include star-psuedo(0rem, -0.1rem, 60%);
+  @include star-psuedo(-0.5em, -0.8em, 50%);
   @include animation-delay(1s);
 }
 
 #star-4::before {
-  @include star-psuedo(-0.9rem, -2rem, 70%);
+  @include star-psuedo(-0.5em, -0.8em, 60%);
 }
 
 #star-5::before {
-  @include star-psuedo(-0.1rem, -2rem, 50%);
+  @include star-psuedo(-0.05em, -0.1em, 35%);
+  z-index: 2;
 }
 
 #star-6::before {
-  @include star-psuedo(-0.1rem, -1rem, 50%);
+  @include star-psuedo(-0.43em, -0.88em, 60%);
+}
+
+#star-7::before {
+  @include star-psuedo(-0.05em, -0.85em, 40%);
+  @include animation-delay(1s);
+  z-index: 2;
 }
 
 ////////////
@@ -299,7 +307,7 @@ $n: 11;
     line-height: 1.2rem;
   }
 
-  span {
+  span.bouncer {
     @media (prefers-reduced-motion: no-preference) {
       animation-name: bounce;
       animation-duration: 1000ms;

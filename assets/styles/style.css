@@ -181,8 +181,8 @@ section#contact {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: -18px;
-  left: -44px;
+  top: -0.3em;
+  left: -0.8em;
   background-size: 85%;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -221,31 +221,6 @@ span {
   position: relative;
 }
 
-#star-1::before {
-  content: "";
-  width: 1.6em;
-  aspect-ratio: 1/1;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  background-image: url("../img/star.svg");
-  background-size: 85%;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: 0rem;
-  left: -2rem;
-  background-size: 87%;
-  animation-delay: -2s;
-}
-@media (prefers-reduced-motion: no-preference) {
-  #star-1::before {
-    animation-name: spin;
-    animation-duration: 16s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-}
-
 #star-2::before {
   content: "";
   width: 1.6em;
@@ -257,9 +232,10 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: -1rem;
-  left: -1rem;
-  background-size: 50%;
+  top: -0.04em;
+  left: -0.82em;
+  background-size: 35%;
+  z-index: 2;
 }
 @media (prefers-reduced-motion: no-preference) {
   #star-2::before {
@@ -281,9 +257,9 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 0rem;
-  left: -0.1rem;
-  background-size: 60%;
+  top: -0.5em;
+  left: -0.8em;
+  background-size: 50%;
   animation-delay: -1s;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -306,9 +282,9 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: -0.9rem;
-  left: -2rem;
-  background-size: 70%;
+  top: -0.5em;
+  left: -0.8em;
+  background-size: 60%;
 }
 @media (prefers-reduced-motion: no-preference) {
   #star-4::before {
@@ -330,9 +306,10 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: -0.1rem;
-  left: -2rem;
-  background-size: 50%;
+  top: -0.05em;
+  left: -0.1em;
+  background-size: 35%;
+  z-index: 2;
 }
 @media (prefers-reduced-motion: no-preference) {
   #star-5::before {
@@ -354,12 +331,38 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: -0.1rem;
-  left: -1rem;
-  background-size: 50%;
+  top: -0.43em;
+  left: -0.88em;
+  background-size: 60%;
 }
 @media (prefers-reduced-motion: no-preference) {
   #star-6::before {
+    animation-name: spin;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+#star-7::before {
+  content: "";
+  width: 1.6em;
+  aspect-ratio: 1/1;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/star.svg");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -0.05em;
+  left: -0.85em;
+  background-size: 40%;
+  animation-delay: -1s;
+  z-index: 2;
+}
+@media (prefers-reduced-motion: no-preference) {
+  #star-7::before {
     animation-name: spin;
     animation-duration: 16s;
     animation-iteration-count: infinite;
@@ -500,44 +503,44 @@ h1 {
   line-height: 1.2rem;
 }
 @media (prefers-reduced-motion: no-preference) {
-  .logo span {
+  .logo span.bouncer {
     animation-name: bounce;
     animation-duration: 1000ms;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
-  .logo span:nth-child(1) {
+  .logo span.bouncer:nth-child(1) {
     animation-delay: -100ms;
   }
-  .logo span:nth-child(2) {
+  .logo span.bouncer:nth-child(2) {
     animation-delay: -200ms;
   }
-  .logo span:nth-child(3) {
+  .logo span.bouncer:nth-child(3) {
     animation-delay: -300ms;
   }
-  .logo span:nth-child(4) {
+  .logo span.bouncer:nth-child(4) {
     animation-delay: -400ms;
   }
-  .logo span:nth-child(5) {
+  .logo span.bouncer:nth-child(5) {
     animation-delay: -500ms;
   }
-  .logo span:nth-child(6) {
+  .logo span.bouncer:nth-child(6) {
     animation-delay: -600ms;
   }
-  .logo span:nth-child(7) {
+  .logo span.bouncer:nth-child(7) {
     animation-delay: -700ms;
   }
-  .logo span:nth-child(8) {
+  .logo span.bouncer:nth-child(8) {
     animation-delay: -800ms;
   }
-  .logo span:nth-child(9) {
+  .logo span.bouncer:nth-child(9) {
     animation-delay: -900ms;
   }
-  .logo span:nth-child(10) {
+  .logo span.bouncer:nth-child(10) {
     animation-delay: -1000ms;
   }
-  .logo span:nth-child(11) {
+  .logo span.bouncer:nth-child(11) {
     animation-delay: -1100ms;
   }
 }

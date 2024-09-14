@@ -69,11 +69,11 @@ html[data-theme="codec"] {
 }
 
 html[data-theme="aquarium"] {
-  --color-body: #005874;
-  --color-background: #cae5ee;
-  --color-primary: #3cb0db;
+  --color-body: #004b74;
+  --color-background: #cbe1e8;
+  --color-primary: #23c1b3;
   --color-accent: var(--color-body);
-  --color-glow: hsla(194, 100%, 40%, 0.565);
+  --color-glow: #23c1b390;
 }
 
 html[data-theme="sepia"] {
@@ -87,7 +87,7 @@ html[data-theme="sepia"] {
 html[data-theme="strawberry"] {
   --color-body: #e54b4b;
   --color-background: #f7ebe8;
-  --color-primary: #ffa987;
+  --color-primary: #ffa565;
   --color-accent: var(--color-body);
   --color-glow: #f8706090;
 }
@@ -95,9 +95,9 @@ html[data-theme="strawberry"] {
 html[data-theme="midnight"] {
   --color-body: #d5cae4;
   --color-background: #1b1725;
-  --color-primary: #66528a;
+  --color-primary: #725a97;
   --color-accent: var(--color-body);
-  --color-glow: #534b6290;
+  --color-glow: #725a9790;
 }
 
 /* fonts */

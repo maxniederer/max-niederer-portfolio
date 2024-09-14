@@ -642,11 +642,11 @@ footer {
 @keyframes bounce {
   from {
     text-shadow: 0px 1px 0px var(--color-primary),
-      0px 0px 28px rgba(255, 125, 96, 0.5647058824);
+      0px 0px 28px var(--color-glow);
   }
   to {
     text-shadow: 0px 0.1em 0px var(--color-primary),
-      0px 0px 28px rgba(255, 125, 96, 0.5647058824);
+      0px 0px 28px var(--color-glow);
   }
 }
 

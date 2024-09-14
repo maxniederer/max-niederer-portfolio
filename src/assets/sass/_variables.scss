@@ -68,6 +68,14 @@ html[data-theme="dark"] {
   --color-glow: #ff7d6090;
 }
 
+html[data-theme="third"] {
+  --color-body: #e0dac9;
+  --color-background: #2b2c29;
+  --color-primary: #798a73;
+  --color-accent: var(--color-primary);
+  --color-glow: hsla(104, 15%, 50%, 0.565);
+}
+
 /* fonts */
 $font-title: "Anybody", sans-serif;
 $font-text: "SUSE", sans-serif;
@@ -120,10 +128,12 @@ $link-glow-hover: drop-shadow(0px 0px 4px var(--color-primary));
   transform: translate(-50%, -50%);
 
   // border: 1px rgba(255, 0, 0, 1) dashed;
-  background-image: url("../img/star.svg");
-  background-size: 85%;
-  background-repeat: no-repeat;
-  background-position: center;
+  mask-image: url("../img/star.svg");
+  mask-size: 85%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  background: var(--color-primary);
 
   // display: none;
 }
@@ -133,7 +143,7 @@ $link-glow-hover: drop-shadow(0px 0px 4px var(--color-primary));
   position: absolute;
   top: $top;
   left: $left;
-  background-size: $size;
+  mask-size: $size;
 
   @include spin-animation();
 }

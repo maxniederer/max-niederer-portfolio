@@ -1,9 +1,10 @@
 const darkModeIcon = document.getElementById("dark-mode-icon");
+const themes = ["light", "dark", "third"];
 
 (() => {
   var currTheme = localStorage.getItem("theme");
-  if (currTheme != "dark" && currTheme != "light") {
-    currTheme = "light";
+  if (!themes.includes(currTheme)) {
+    currTheme = themes[0];
   }
   document.documentElement.setAttribute("data-theme", currTheme);
   toggleDarkModeIcon(currTheme);
@@ -11,9 +12,12 @@ const darkModeIcon = document.getElementById("dark-mode-icon");
 
 function toggleDarkMode() {
   let targetTheme =
-    document.documentElement.getAttribute("data-theme") == "dark"
-      ? "light"
-      : "dark";
+    themes[
+      (themes.indexOf(document.documentElement.getAttribute("data-theme")) +
+        1) %
+        themes.length
+    ];
+  console.log(targetTheme);
   document.documentElement.setAttribute("data-theme", targetTheme);
   localStorage.setItem("theme", targetTheme);
   toggleDarkModeIcon(targetTheme);

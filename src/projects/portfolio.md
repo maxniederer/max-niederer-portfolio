@@ -1,5 +1,5 @@
 ---
-title: Portfolio Website
+title: My Portfolio Site
 tags: featured
 desc: More detail about this website and its tech stack.
 image: /assets/img/P1.png

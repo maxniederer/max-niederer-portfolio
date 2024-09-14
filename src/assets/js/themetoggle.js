@@ -1,5 +1,12 @@
 const darkModeIcon = document.getElementById("dark-mode-icon");
-const themes = ["light", "dark", "third"];
+const themes = [
+  "light",
+  "codec",
+  "aquarium",
+  "sepia",
+  "strawberry",
+  "midnight",
+];
 const mii = document.getElementById("mii");
 
 (() => {
@@ -27,10 +34,12 @@ function toggleDarkMode() {
 }
 
 function toggleDarkModeIcon(newTheme) {
-  if (newTheme == "dark") {
+  let ind = themes.indexOf(newTheme);
+  if (ind % 2 != 0) {
+    // if odd, theme is dark mode
     darkModeIcon.classList.add("fa-sun");
     darkModeIcon.classList.remove("fa-moon");
-  } else if (newTheme == "light") {
+  } else {
     darkModeIcon.classList.add("fa-moon");
     darkModeIcon.classList.remove("fa-sun");
   }
@@ -40,16 +49,22 @@ function toggleMii(newTheme) {
   let ind = themes.indexOf(newTheme);
   switch (ind) {
     case 0:
-      console.log("0");
       mii.src = "/assets/img/mii.png";
       break;
     case 1:
-      console.log("1");
-      mii.src = "/assets/img/mii.png";
+      mii.src = "/assets/img/mii_codec.png";
       break;
     case 2:
-      console.log("2");
-      mii.src = "/assets/img/mii_third.png";
+      mii.src = "/assets/img/mii_aquarium.png";
+      break;
+    case 3:
+      mii.src = "/assets/img/mii_sepia.png";
+      break;
+    case 4:
+      mii.src = "/assets/img/mii_strawberry.png";
+      break;
+    case 5:
+      mii.src = "/assets/img/mii_midnight.png";
       break;
   }
 }

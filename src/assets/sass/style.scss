@@ -308,8 +308,9 @@ nav button {
       height: 100%;
       z-index: -1;
 
-      background-image: url("../img/mii_hover.png");
-      background-size: cover;
+      mask-image: url("../img/mii_hover.png");
+      mask-size: cover;
+      background: var(--color-primary);
       opacity: 0;
 
       animation-name: bob;
@@ -652,9 +653,9 @@ footer {
 
 @keyframes bob {
   0% {
-    background-image: url("../img/mii_hover.png");
+    mask-image: url("../img/mii_hover.png");
   }
   100% {
-    background-image: url("../img/mii_hover2.png");
+    mask-image: url("../img/mii_hover2.png");
   }
 }

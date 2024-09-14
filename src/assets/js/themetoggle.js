@@ -1,5 +1,6 @@
 const darkModeIcon = document.getElementById("dark-mode-icon");
 const themes = ["light", "dark", "third"];
+const mii = document.getElementById("mii");
 
 (() => {
   var currTheme = localStorage.getItem("theme");
@@ -8,6 +9,7 @@ const themes = ["light", "dark", "third"];
   }
   document.documentElement.setAttribute("data-theme", currTheme);
   toggleDarkModeIcon(currTheme);
+  toggleMii(currTheme);
 })();
 
 function toggleDarkMode() {
@@ -21,6 +23,7 @@ function toggleDarkMode() {
   document.documentElement.setAttribute("data-theme", targetTheme);
   localStorage.setItem("theme", targetTheme);
   toggleDarkModeIcon(targetTheme);
+  toggleMii(targetTheme);
 }
 
 function toggleDarkModeIcon(newTheme) {
@@ -30,5 +33,23 @@ function toggleDarkModeIcon(newTheme) {
   } else if (newTheme == "light") {
     darkModeIcon.classList.add("fa-moon");
     darkModeIcon.classList.remove("fa-sun");
+  }
+}
+
+function toggleMii(newTheme) {
+  let ind = themes.indexOf(newTheme);
+  switch (ind) {
+    case 0:
+      console.log("0");
+      mii.src = "/assets/img/mii.png";
+      break;
+    case 1:
+      console.log("1");
+      mii.src = "/assets/img/mii.png";
+      break;
+    case 2:
+      console.log("2");
+      mii.src = "/assets/img/mii_third.png";
+      break;
   }
 }

@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+  document.body.classList.remove("preload");
+});
+
 const darkModeIcon = document.getElementById("dark-mode-icon");
 const themes = ["plum", "codec", "aquarium", "sepia", "strawberry", "midnight"];
 const mii = document.getElementById("mii");

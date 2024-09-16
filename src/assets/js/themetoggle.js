@@ -49,19 +49,19 @@ function toggleMii(newTheme) {
         mii.src = "/assets/img/mii.png";
         break;
       case 1:
-        mii.src = "/assets/img/mii_codec.png";
+        mii.src = "/assets/img/mii_codec.webp";
         break;
       case 2:
-        mii.src = "/assets/img/mii_aquarium.png";
+        mii.src = "/assets/img/mii_aquarium.webp";
         break;
       case 3:
-        mii.src = "/assets/img/mii_sepia.png";
+        mii.src = "/assets/img/mii_sepia.webp";
         break;
       case 4:
-        mii.src = "/assets/img/mii_strawberry.png";
+        mii.src = "/assets/img/mii_strawberry.webp";
         break;
       case 5:
-        mii.src = "/assets/img/mii_midnight.png";
+        mii.src = "/assets/img/mii_midnight.webp";
         break;
     }
   }

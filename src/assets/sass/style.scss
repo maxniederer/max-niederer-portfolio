@@ -6,7 +6,7 @@
 
 * {
   box-sizing: border-box;
-  scroll-margin: 30px;
+  scroll-margin: 20px;
 
   &::selection {
     background: var(--color-primary);
@@ -127,7 +127,7 @@ h6 {
   position: relative;
   font: {
     family: $font-title;
-    weight: 900;
+    weight: 800;
   }
 }
 

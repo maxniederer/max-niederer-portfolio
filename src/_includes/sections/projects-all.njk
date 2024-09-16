@@ -8,7 +8,7 @@
 
     {%- for project in collections.project | sortByOrder -%}
       <a class="project-entry float-up" href="{{project.url}}">
-        <div class="project-body">
+        <div class="project-img">
           <img src="{{project.data.image}}" alt="{{project.data.imageAlt}}"/>
         </div>
         <div class="project-content">

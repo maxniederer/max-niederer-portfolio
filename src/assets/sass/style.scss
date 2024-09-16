@@ -401,8 +401,18 @@ $n: 11;
   grid-gap: 2rem;
 }
 
+.project-content {
+  flex-grow: 1;
+  .project-desc {
+    margin: 0;
+  }
+}
+
 .project-entry {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
   padding: 2rem;
   font-size: 1rem;
 
@@ -433,13 +443,6 @@ $n: 11;
     }
   }
 
-  & > *:nth-child(2) {
-    align-self: start;
-  }
-  & > *:nth-child(3) {
-    align-self: end;
-  }
-
   img {
     width: 100%;
     border-radius: 0 20px 0 0;
@@ -454,9 +457,7 @@ $n: 11;
   }
 
   h3 {
-    margin-top: 21px;
-    margin-bottom: 15px;
-    line-height: 25px;
+    line-height: 1.1;
 
     transition-property: color;
     @include transition-style();

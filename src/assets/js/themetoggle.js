@@ -1,6 +1,18 @@
-window.addEventListener("load", () => {
-  document.body.classList.remove("preload");
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  // loader.style.display = "none";
+  loader.style.opacity = 0;
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 300);
 });
+
+//Fade out, optional
+// var s = document.getElementById("preloader").style;
+// s.opacity = 1;
+// (function fade() {
+//   (s.opacity -= 0.05) < 0 ? (s.display = "none") : setTimeout(fade, 20);
+// })();
 
 const darkModeIcon = document.getElementById("dark-mode-icon");
 const themes = ["plum", "codec", "aquarium", "sepia", "strawberry", "midnight"];

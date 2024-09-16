@@ -45,11 +45,17 @@
     <title>Max Niederer</title>
   </head>
 
-  <body class="preload">
+  <body class="">
+
+    <div id="preloader">
+      {# <i class="fa-solid fa-spinner"></i> #}
+    </div>
     
     {% include 'partials/header.html' %}
 
-    <div class="site-holder">{{ content | safe }}</div>
+    <main class="site-holder">
+      {{ content | safe }}
+    </main>
 
     {% include 'partials/footer.html' %}
 

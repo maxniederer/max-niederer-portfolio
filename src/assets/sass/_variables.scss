@@ -155,15 +155,12 @@ $link-glow-hover: drop-shadow(0px 0px 4px var(--color-primary));
 
   transform: translate(-50%, -50%);
 
-  // border: 1px rgba(255, 0, 0, 1) dashed;
   mask-image: url("../img/star.svg");
   mask-size: 85%;
   mask-repeat: no-repeat;
   mask-position: center;
 
   background: var(--color-primary);
-
-  // display: none;
 }
 
 @mixin star-psuedo($top, $left, $size) {

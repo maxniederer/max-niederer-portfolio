@@ -23,7 +23,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-body);
 
-  padding-inline: clamp(16px, 3vw, 32px);
+  padding-inline: clamp(22px, 3vw, 32px);
   max-width: 100rem;
   margin-inline: auto;
 
@@ -58,20 +58,40 @@ a {
   top: 0;
   color: var(--color-background);
   background: var(--color-body);
-  outline: 1px solid var(--color-body);
+  // outline: 1px solid var(--color-body);
   box-shadow: 0 4px 0 0 var(--color-primary);
   font-weight: 600;
   margin-bottom: 1rem;
 
-  transition-property: color, top, box-shadow, background;
+  transition-property: color, top, box-shadow, background, filter;
   @include transition-style();
-  &:hover {
+  &:hover,
+  &:focus {
     top: 2px;
     box-shadow: 0 2px 0 0 var(--color-primary);
     text-decoration: none;
-    color: var(--color-body);
+    background: var(--color-primary);
+    // @include link-hover-glow();
+    color: var(--color-background);
+    filter: drop-shadow(0px 0px 7px var(--color-glow));
+  }
+}
+
+.btn-secondary {
+  border: 1px solid var(--color-body);
+  background: none;
+  color: var(--color-body);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
     background: none;
   }
+}
+
+.button-holder {
+  display: flex;
+  gap: 10px;
 }
 
 #preloader {
@@ -92,7 +112,7 @@ a {
 }
 
 section#hero {
-  margin-block: 0.5rem 2rem;
+  margin-block: 1rem 2rem;
 }
 
 section#contact {
@@ -217,7 +237,7 @@ span {
 
 header {
   margin-top: clamp(1rem, 2.5vw, 2rem);
-  margin-bottom: 3rem;
+  margin-bottom: clamp(1rem, 3vw, 2rem);
   font-size: 1rem;
 
   padding-bottom: 1rem;

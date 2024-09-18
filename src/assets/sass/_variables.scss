@@ -117,7 +117,8 @@ $link-glow-hover: drop-shadow(0px 0px 4px var(--color-primary));
 @mixin link-hover-glow() {
   transition-property: filter, color;
   @include transition-style();
-  &:hover {
+  &:hover,
+  &:focus {
     @include link-glow();
     color: var(--color-primary);
   }

@@ -9,11 +9,18 @@ layout: layouts/base.njk
     {{ title }}
   </h2>
 
-  {% if link %}
-    <a class="btn" href="{{ link }}" target="_blank" rel="noopener noreferrer">
-      {{ linkTitle }}
-    </a>
-  {% endif %}
+  <div class="button-holder">
+    {% if link %}
+      <a class="btn" href="{{ link }}" target="_blank" rel="noopener noreferrer">
+        {{ linkTitle }}
+      </a>
+    {% endif %}
+    {% if gitLink %}
+      <a class="btn btn-secondary" href="{{ gitLink }}" target="_blank" rel="noopener noreferrer">
+        GitHub Repository
+      </a>
+    {% endif %}
+  </div>
 
   {{ content | safe }}
 </div>

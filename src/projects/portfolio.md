@@ -4,6 +4,7 @@ tags: featured
 desc: More detail about this website and its tech stack.
 image: /assets/img/P1.png
 imageAlt: a white and purple graphic with orange stars and the initiails MN
+gitLink: https://github.com/maxniederer/max-niederer-portfolio
 order: 2
 ---
 

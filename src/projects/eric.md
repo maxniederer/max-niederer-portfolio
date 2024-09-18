@@ -6,6 +6,7 @@ image: /assets/img/P2.png
 imageAlt: a screencap of Eric's website with a green background and purple text
 linkTitle: View Website
 link: https://eric-trimbur-portfolio.netlify.app/
+gitLink: https://github.com/maxniederer/eric-trimbur-portfolio
 order: 1
 ---
 

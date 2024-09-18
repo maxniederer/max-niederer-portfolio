@@ -112,7 +112,7 @@ a {
 }
 
 section#hero {
-  margin-block: 1rem 2rem;
+  margin-block: 2rem 2.25rem;
 }
 
 section#contact {
@@ -133,7 +133,7 @@ section#contact {
 
   img {
     max-width: 100%;
-    outline: 1px solid var(--color-accent);
+    border: 1px solid var(--color-accent);
     box-shadow: 5px 5px 0 0 var(--color-accent);
     border-radius: 0 16px 0 0;
 
@@ -249,7 +249,7 @@ header {
   justify-content: space-between;
   align-items: center;
   user-select: none;
-  flex-direction: column;
+  // flex-direction: column;
 }
 
 .hamburger {
@@ -258,7 +258,7 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 0.75rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
 
@@ -436,19 +436,19 @@ $n: 11;
   padding: 2rem;
   font-size: 1rem;
 
-  outline: 1px solid var(--color-body);
+  border: 1px solid var(--color-body);
   box-shadow: 5px 5px 0 0 var(--color-body);
   border-radius: 0 30px 0 0;
   cursor: pointer;
 
-  transition-property: box-shadow outline-color;
+  transition-property: box-shadow border-color;
   @include transition-style();
 
   &:hover {
     box-shadow: 5px 5px 0 0 var(--color-primary);
-    outline-color: var(--color-primary);
+    border-color: var(--color-primary);
     img {
-      filter: brightness(120%);
+      filter: hue-rotate(-5deg);
       border-color: var(--color-primary);
     }
     .read-more {
@@ -515,7 +515,7 @@ $n: 11;
 
 .tag {
   display: inline-block;
-  outline: 1px solid var(--color-accent);
+  border: 1px solid var(--color-accent);
   color: var(--color-accent);
   margin-right: 12px;
   margin-bottom: 10px;
@@ -577,7 +577,7 @@ footer {
   font-size: 1rem;
 
   padding-top: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   border-top: 1px solid var(--color-accent);
 
   & > nav {

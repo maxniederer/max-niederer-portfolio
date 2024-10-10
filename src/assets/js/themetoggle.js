@@ -1,5 +1,5 @@
 const darkModeIcon = document.getElementById("dark-mode-icon");
-const themes = ["plum", "codec", "aquarium", "sepia", "strawberry", "midnight"];
+const themes = ["plum", "sepia", "aquarium", "midnight"];
 const mii = document.getElementById("mii");
 
 (() => {
@@ -45,20 +45,20 @@ function toggleMii(newTheme) {
         mii.src = "/assets/img/mii.png";
         break;
       case 1:
-        mii.src = "/assets/img/mii_codec.webp";
+        mii.src = "/assets/img/mii_sepia.webp";
         break;
       case 2:
         mii.src = "/assets/img/mii_aquarium.webp";
         break;
       case 3:
-        mii.src = "/assets/img/mii_sepia.webp";
-        break;
-      case 4:
-        mii.src = "/assets/img/mii_strawberry.webp";
-        break;
-      case 5:
         mii.src = "/assets/img/mii_midnight.webp";
         break;
+      // case 4:
+      //   mii.src = "/assets/img/mii_strawberry.webp";
+      //   break;
+      // case 1:
+      //   mii.src = "/assets/img/mii_codec.webp";
+      //   break;
     }
   }
 }

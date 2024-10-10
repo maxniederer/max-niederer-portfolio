@@ -7,18 +7,20 @@
   <div class="project-row">
 
     {%- for project in collections.project | sortByOrder -%}
-      <a class="project-entry float-up" href="{{project.url}}">
-        <div class="project-img">
-          <img src="{{project.data.image}}" alt="{{project.data.imageAlt}}"/>
-        </div>
-        <div class="project-content">
-          <h3>{{project.data.title}}</h3>
-          <p class="project-desc">
-            {{project.data.desc}}
-          </p>
-        </div>
-        <p class="read-more">Read more</p>
-      </a>
+      {% if not project.data.draft %}
+        <a class="project-entry float-up" href="{{project.url}}">
+          <div class="project-img">
+            <img src="{{project.data.image}}" alt="{{project.data.imageAlt}}"/>
+          </div>
+          <div class="project-content">
+            <h3>{{project.data.title}}</h3>
+            <p class="project-desc">
+              {{project.data.desc}}
+            </p>
+          </div>
+          <p class="read-more">Read more</p>
+        </a>
+      {% endif %}
     {%- endfor -%}
 
   </div>

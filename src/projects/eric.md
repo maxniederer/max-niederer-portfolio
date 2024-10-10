@@ -3,11 +3,11 @@ title: Eric Trimbur's Website
 tags: featured
 desc: A personal/portfolio website for a computer engineer.
 image: /assets/img/P2.png
-imageAlt: a screencap of Eric's website with a green background and purple text
+imageAlt: website screencap
 linkTitle: View Website
 link: https://eric-trimbur-portfolio.netlify.app/
 gitLink: https://github.com/maxniederer/eric-trimbur-portfolio
-order: 1
+order: 2
 ---
 
 Eric is a computer engineer & software developer who wanted a refresh to his portfolio website. He disliked paying a subscription to Squarespace and wanted a more streamlined workflow to updating his site. He also dicussed potentially hosting a blog in the future.

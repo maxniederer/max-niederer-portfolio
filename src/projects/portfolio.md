@@ -6,6 +6,7 @@ image: /assets/img/P1.png
 imageAlt: a white and purple graphic with orange stars and the initiails MN
 gitLink: https://github.com/maxniederer/max-niederer-portfolio
 order: 2
+draft: true
 ---
 
 A portfolio site for my web development ventures.

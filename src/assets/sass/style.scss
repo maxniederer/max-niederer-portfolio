@@ -24,7 +24,7 @@ body {
   color: var(--color-body);
 
   padding-inline: clamp(22px, 3vw, 32px);
-  max-width: 100rem;
+  max-width: 92rem;
   margin-inline: auto;
 
   font-family: $font-text;
@@ -65,8 +65,7 @@ a {
 
   transition-property: color, top, box-shadow, background, filter;
   @include transition-style();
-  &:hover,
-  &:focus {
+  &:hover {
     top: 2px;
     box-shadow: 0 2px 0 0 var(--color-primary);
     text-decoration: none;
@@ -81,8 +80,7 @@ a {
   border: 1px solid var(--color-body);
   background: none;
   color: var(--color-body);
-  &:hover,
-  &:focus {
+  &:hover {
     border: 1px solid var(--color-primary);
     color: var(--color-primary);
     background: none;

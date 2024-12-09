@@ -587,6 +587,24 @@ footer {
   }
 }
 
+.alerta {
+  background-color: var(--color-body);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  color: var(--color-background);
+  font-size: 80%;
+  text-align: center;
+  font-weight: bold;
+}
+.alerta::before {
+  content: "\f071";
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-right: 2px;
+}
+
 ///////////////////////
 /* RESPONSIVE DESIGN */
 ///////////////////////

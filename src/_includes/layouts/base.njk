@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- styles -->
-    {# <link rel="stylesheet" href="/assets/css/style.css" /> #}
-    {# <link rel="stylesheet" href="/assets/css/reset.css" /> #}
+    {#
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    #} {#
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    #}
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/styleold.css" />
 
@@ -37,23 +40,26 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
     {# proloading mii assets for smoother theme transitions #}
-    <link rel="preload" as="image" href="/assets/img/mii.png">
-    <link rel="preload" as="image" href="/assets/img/mii_aquarium.webp">
-    <link rel="preload" as="image" href="/assets/img/mii_sepia.webp">
-    <link rel="preload" as="image" href="/assets/img/mii_midnight.webp">
+    <link rel="preload" as="image" href="/assets/img/mii.png" />
+    <link rel="preload" as="image" href="/assets/img/mii_aquarium.webp" />
+    <link rel="preload" as="image" href="/assets/img/mii_sepia.webp" />
+    <link rel="preload" as="image" href="/assets/img/mii_midnight.webp" />
 
     <title>Max Niederer</title>
   </head>
 
   <body class="">
+    <a class="alerta" href="https://2024-max-niederer-portfolio.netlify.app/">
+      Please visit
+      <u>https://2024-max-niederer-portfolio.netlify.app/</u> for my latest
+      work.
+    </a>
 
     <div id="preloader"></div>
-    
+
     {% include 'partials/header.html' %}
 
-    <main class="site-holder">
-      {{ content | safe }}
-    </main>
+    <main class="site-holder">{{ content | safe }}</main>
 
     {% include 'partials/footer.html' %}
 
